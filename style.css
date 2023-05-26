@@ -1,0 +1,219 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+@font-face {
+    font-family: 'idroid';
+    src: url('fontes/idroid.otf') format(opentype);
+}
+
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+:root {
+    --corTituloHeader: white;
+    --corFundo: rgb(227, 229, 230);
+    --corTitulo: #154247;
+    --corExtras: #b9dbe0;
+    --corDegrade1: #457d85;
+    --corDegrade2: #154247;
+    --sombraFundo: 0px 0px 6px rgba(0, 0, 0, 0.400);
+    --sombratexto: 2px 2px 5px rgba(0, 0, 0, 0.400);
+    --ico-link: "\00a0\1F517";
+}
+
+
+body {
+    background-color: var(--corFundo);
+    font-family: 'Roboto';
+}
+
+header {
+    padding: 15px;
+    height: 90px;
+    background-image: linear-gradient(to right, var(--corDegrade1), var(--corDegrade2));
+    color: var(--corTituloHeader);
+    position: relative;
+}
+
+header h1 {
+    font-family: 'Bebas Neue';
+    color: var(--corTituloHeader);
+    text-align: center;
+    text-shadow: 2px 2px 5px var(--sombratexto);
+    margin: -4px 0px 0px 0px;
+}
+
+header p {
+    text-align: center;
+    text-shadow: 2px 2px 5px var(--sombratexto);
+    margin: 20px 0px 15px 0px;
+}
+
+nav {
+    position: relative;
+    background-image: linear-gradient(to right, var(--corDegrade1), var(--corDegrade2));
+    padding: 15px;
+    box-shadow: 2px 2px 2px 2px rgba(105, 104, 104, 0.26);
+}
+
+nav a {
+    text-decoration: none;
+    color: var(--corTituloHeader);
+    margin-right: 10px;
+    padding: 10px 0px 3px 0px;
+    padding: 10px;
+    border-radius: 4px;
+    font-weight: normal;
+    transition-duration: 0.5s;
+}
+
+nav a:hover {
+    background-color: var(--corDegrade2);
+}
+
+main {
+    background-color: white;
+    margin: auto;
+    border-radius: 0px 0px 5px 5px;
+    box-shadow: var(--sombraFundo);
+    min-width: 300px;
+    max-width: 1000px;
+}
+
+main article {
+    padding: 30px;
+    justify-content: center;
+    display: block;
+}
+
+article h1 {
+    font-family: 'idroid';
+    text-align: center;
+    font-size: 2em;
+    padding: 20px;
+    color: var(--corTitulo);
+    text-shadow: var(--sombratexto);
+}
+
+article h2 {
+    background-image: linear-gradient(to right, var(--corDegrade2), transparent);
+    font-family: 'idroid';
+    text-align: left;
+    padding: 2px;
+    padding-left: 20px;
+    color: white;
+    border-radius: 10px;
+    text-shadow: var(--sombratexto);
+}
+
+strong {
+    color: #154247;
+    text-shadow: var(--sombratexto);
+}
+
+a {
+    text-decoration: none;
+    font-weight: bold;
+    color: #154247;
+}
+
+main a::after {
+    content: var(--ico-link);
+}
+
+a:hover {
+    background-color: var(--corTitulo);
+    color: white;
+}
+
+main p {
+    margin-top: 20px;
+    text-indent: 2em;
+    line-height: 2em;
+    text-align: justify;
+    padding-bottom: 20px;
+}
+
+img {
+    width: 100%;
+}
+
+.pequena {
+    display: block;
+    max-width: 250px;
+    margin: auto;
+}
+
+.boxVideo {
+    position: relative;
+    padding: 20px 20px 0px 20px;
+    height: 500px;
+    background-color: #457d85;
+    margin-bottom: 30px;
+}
+
+.boxVideo iframe {
+    width: 100%;
+    height: 95%;
+    margin: auto;
+    margin-top: 3px;
+}
+
+#curiosidades {
+    padding: 10px;
+    margin-bottom: 20px;
+    line-height: 2em;
+    justify-content: left;
+    border-radius: 7px;
+    background-color: var(--corExtras);
+    box-shadow: var(--sombraFundo);
+}
+
+#curiosidades h3 {
+    border-radius: 5px 5px 0px 0px;
+    background-color: var(--corTitulo);
+    color: white;
+    font-size: 1em;
+    padding: 5px 10px;
+    margin: -10px -10px 20px -10px;
+}
+
+ul {
+    margin: 10px;
+    padding: 30px;
+    line-height: 2em;
+    columns: 2;
+    list-style-type: "✔  ";
+    list-style-position: inside;
+}
+
+footer {
+    background-color: #154247;
+    color: white;
+}
+
+footer p {
+    font-size: 0.8em;
+    margin: 0px;
+    padding: 3px;
+    text-align: center;
+}
+
+footer p a {
+    text-decoration: none;
+    font-weight: normal;
+    color: white;
+}
+
+footer p a:hover {
+    background-color: #457d85;
+    color: black;
+    font-weight: bold;
+}
+
+footer a::after {
+    content: var(--ico-link);
+}
